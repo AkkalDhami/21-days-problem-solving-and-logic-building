@@ -93,3 +93,13 @@ function divisibleBy3And5UpToN(n: number) {
   }
 }
 divisibleBy3And5UpToN(30); //* 15, 30
+
+//? 13. Print only the numbers that are both even and perfect squares
+function printOnly(num: number) {
+  for (let i = 1; i <= num; i++) {
+    if (Number.isInteger(Math.sqrt(i)) && i % 2 === 0) {
+      console.log(i);
+    }
+  }
+}
+printOnly(20); // 4, 16
